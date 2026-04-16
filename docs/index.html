@@ -88,7 +88,7 @@
       async function checkPwd() {
         const h = await sha256(document.getElementById("pwd").value);
         if (h === HASH) {
-          sessionStorage.setItem("maison_auth", "1");
+          sessionStorage.setItem("auth", "true");
           window.location.href = "dashboard.html";
         } else {
           document.getElementById("err").style.display = "block";
