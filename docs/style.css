@@ -331,7 +331,6 @@ a:hover {
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
   white-space: nowrap;
-  transition: color 0.15s;
 }
 
 .tab-labels label:hover {
