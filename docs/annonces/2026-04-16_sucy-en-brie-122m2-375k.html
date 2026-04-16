@@ -389,12 +389,6 @@ Annonce mise en ligne : 21 mars 2026 — modifiée le 15 avril 2026 (~26 jours)<
         <small>Mis à jour : 16 avril 2026</small>
       </footer>
     </div>
-    <script>
-      {
-        {
-          AUTH_SCRIPT;
-        }
-      }
-    </script>
+    <script>if(!sessionStorage.getItem("auth")){window.location.href="../index.html";}</script>
   </body>
 </html>
