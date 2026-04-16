@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   SOURCE_DIR: path.join(__dirname, ".."),
-  OUTPUT_DIR: path.join(__dirname, "dist"),
+  OUTPUT_DIR: path.join(__dirname, "docs"),
   PASSWORD_HASH: process.env.SITE_PASSWORD_HASH || "maison2026",
   SITUATION_FILES: [
     { src: "financement.md", out: "financement.html", title: "Financement" },
