@@ -1,0 +1,356 @@
+/* ============================================================
+   Projet Maison — Mobile-first CSS
+   Base: 375px, max-content: 768px
+   ============================================================ */
+
+/* Reset & base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111827;
+  background: #f9fafb;
+}
+
+/* ---- Layout ---- */
+
+.content {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+/* ---- Header ---- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 16px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+/* ---- Navigation ---- */
+
+.site-nav a {
+  color: #374151;
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+.site-nav a:hover {
+  color: #2563eb;
+}
+
+/* ---- Tab nav ---- */
+
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+  gap: 0;
+}
+
+.tab-nav a {
+  padding: 10px 16px;
+  color: #6b7280;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+}
+
+.tab-nav a.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+/* ---- Footer ---- */
+
+.site-footer {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 12px;
+  padding: 24px 16px;
+}
+
+/* ---- Typography ---- */
+
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+blockquote {
+  border-left: 3px solid #2563eb;
+  padding-left: 12px;
+  color: #374151;
+  margin: 12px 0;
+}
+
+code {
+  background: #f3f4f6;
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+pre {
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* ---- Task list (markdown checkboxes) ---- */
+
+.task-list-item {
+  list-style: none;
+  padding-left: 0;
+}
+
+.task-list-item input[type="checkbox"] {
+  pointer-events: none;
+}
+
+/* ---- Tables ---- */
+
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 12px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+/* ---- Badges verdict ---- */
+
+.badge-go,
+.badge-neutre,
+.badge-pass {
+  border-radius: 4px;
+  padding: 2px 10px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.badge-go {
+  background: #22c55e;
+  color: #fff;
+}
+
+.badge-neutre {
+  background: #f97316;
+  color: #fff;
+}
+
+.badge-pass {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* ---- Cards (annonces) ---- */
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  border-color: #2563eb;
+}
+
+/* ---- Form elements ---- */
+
+.input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: -1px;
+  border-color: #2563eb;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* ---- Links ---- */
+
+a {
+  color: #2563eb;
+}
+a:hover {
+  color: #1d4ed8;
+}
+
+/* ---- Annonce page ---- */
+
+.annonce-back {
+  margin-bottom: 12px;
+}
+
+.annonce-back a {
+  font-size: 14px;
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.annonce-back a:hover {
+  color: #2563eb;
+}
+
+.annonce-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.annonce-header h1 {
+  flex: 1;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+/* ---- CSS-only Tabs ---- */
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tab-labels {
+  display: flex;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  gap: 0;
+}
+
+.tab-labels label {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6b7280;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.tab-labels label:hover {
+  color: #2563eb;
+}
+
+.tab-panel {
+  display: none;
+}
+
+#tab-fiche:checked ~ .tab-labels label[for="tab-fiche"],
+#tab-strat:checked ~ .tab-labels label[for="tab-strat"],
+#tab-quest:checked ~ .tab-labels label[for="tab-quest"] {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+#tab-fiche:checked ~ .tab-panels #panel-fiche,
+#tab-strat:checked ~ .tab-panels #panel-strat,
+#tab-quest:checked ~ .tab-panels #panel-quest {
+  display: block;
+}

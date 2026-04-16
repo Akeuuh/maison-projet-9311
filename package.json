@@ -1,0 +1,25 @@
+{
+  "name": "maison-v2-site",
+  "version": "0.1.0",
+  "description": "Static site generator for real estate project",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && echo 'Built successfully'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "glob": "^10.3.10"
+  },
+  "keywords": [
+    "static-site",
+    "generator",
+    "markdown"
+  ],
+  "author": "Axel",
+  "license": "MIT"
+}

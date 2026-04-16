@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{{TITLE}} — Projet Maison</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <span style="font-weight: 700; color: #2563eb">🏠 Maison</span>
+      <nav class="site-nav">{{NAV}}</nav>
+    </header>
+    <div style="max-width: 768px; margin: 0 auto; padding: 0 16px">
+      <main class="content">{{CONTENT}}</main>
+      <footer class="site-footer">
+        <small>Mis à jour : {{TIMESTAMP}}</small>
+      </footer>
+    </div>
+    <script>
+      {
+        {
+          AUTH_SCRIPT;
+        }
+      }
+    </script>
+  </body>
+</html>
